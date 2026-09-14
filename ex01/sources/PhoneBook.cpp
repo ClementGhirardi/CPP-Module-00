@@ -34,7 +34,7 @@ void	PhoneBook::setContact(void)
 	{
 		for (int i = 0; i < 7; i++)
 			this->_contacts[i] = this->_contacts[i + 1];
-		this->_contacts[this->_totalNbContacts].setContact();
+		this->_contacts[this->_totalNbContacts - 1].setContact();
 	}
 }
 
